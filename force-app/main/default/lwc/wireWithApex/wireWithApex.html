@@ -1,0 +1,12 @@
+<template>
+        <lightning-card title="Contacts List Using WireWithApex" icon-name="standard:groups" if:true={contacts}>				
+			<template for:each={contacts} for:item="contact">
+					<lightning-tile key={contact.Id} label={contact.Name} type="media">
+							<lightning-icon slot="media" icon-name="standard:contact"></lightning-icon>			
+					</lightning-tile>
+			</template>
+			</lightning-card>
+			<template if:true={error}>
+				<div>No data available...</div>
+			</template>
+</template>

@@ -1,0 +1,16 @@
+<template>		
+        <lightning-card title="PubsubContactsList" icon-name="custom:custom30">
+           <template for:each={contacts.data} for:item="contact">
+                <div class="slds-p-around_medium lgc-bg" key={contact.Id}>
+                        <lightning-tile label={contact.Name} type="media">
+                            <lightning-icon slot="media" icon-name="standard:contact"></lightning-icon>
+                            <p class="slds-truncate"><lightning-formatted-email value={contact.Email}></lightning-formatted-email></p>
+                        </lightning-tile>
+                    </div>    
+                </template>   
+                <template if:true={contacts.error}>
+                    <div>No data available...</div>
+                </template>
+        </lightning-card>
+               
+</template>

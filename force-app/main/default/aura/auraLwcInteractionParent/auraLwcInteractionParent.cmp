@@ -1,0 +1,22 @@
+<aura:component>
+        <aura:attribute name="message" type="String" default="No selection"/>
+        <lightning:card title="Aura Component Containing LWc Component" iconName="custom:custom30">      
+            <div class="slds-m-around_medium">
+                <lightning:layout>
+                    <lightning:layoutItem size="4">
+                        <!-- This is an LWC component -->  
+                        <lightning:tile label="Lwc Component Child">
+                         <c:auraLwcInteractionChild oncolorchange="{!c.handleColorChange}"/>
+                        </lightning:tile>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="8" class="slds-p-left_medium">    
+                        <lightning:tile label="Aura Parent Component Part">                  
+                        {!v.message}
+                        </lightning:tile>
+                    </lightning:layoutItem>
+                </lightning:layout>
+            </div>
+        </lightning:card>
+    <h2> Aura Parent: auraLwcInteractionParent </h2>
+    <h2> LWC Child : auraLwcInteractionChild  </h2> 
+</aura:component>	

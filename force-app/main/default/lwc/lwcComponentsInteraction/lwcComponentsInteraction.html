@@ -1,0 +1,29 @@
+<template>
+    <lightning-tabset>            
+        <lightning-tab label="Parent to child">    
+            <c-search></c-search>  
+            <br/><br/>     
+            <h2>Parent: Search</h2>
+            <h2>Child: SearchContactResult  </h2>
+        </lightning-tab>
+        <lightning-tab label="Child to parent">
+              <c-contacts-list></c-contacts-list>
+                <h2>Parent: contactsList</h2>
+                <h2>Child : contactListItem</h2> 
+        </lightning-tab>
+        <lightning-tab label="Pubsub Events">
+            <lightning-layout vertical-align="center"> 
+                <lightning-layout-item padding="around-small">
+                       <c-pubsub-search-bar></c-pubsub-search-bar>
+                </lightning-layout-item>               
+                <lightning-layout-item padding="around-small">
+                 <c-pubsub-contacts-list></c-pubsub-contacts-list>
+                </lightning-layout-item>                 
+                 
+            </lightning-layout>
+            <br/>     
+            <h2>Sibling Components Interaction: pubsubContactsList and pubsubSearchBar </h2>                   
+      
+        </lightning-tab>  
+    </lightning-tabset>
+</template>

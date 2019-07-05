@@ -1,0 +1,59 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/auraLwcInteractionChild": [
+                "auraLwcInteractionChild/auraLwcInteractionChild.js"
+            ],
+            "c/baseLightning": [
+                "baseLightning/baseLightning.js"
+            ],
+            "c/contactListItem": [
+                "contactListItem/contactListItem.js"
+            ],
+            "c/contactsList": [
+                "contactsList/contactsList.js"
+            ],
+            "c/imperativeApex": [
+                "imperativeApex/imperativeApex.js"
+            ],
+            "c/lwcComponentsInteraction": [
+                "lwcComponentsInteraction/lwcComponentsInteraction.js"
+            ],
+            "c/pubsub": [
+                "pubsub/pubsub.js"
+            ],
+            "c/pubsubContactsList": [
+                "pubsubContactsList/pubsubContactsList.js"
+            ],
+            "c/pubsubSearchBar": [
+                "pubsubSearchBar/pubsubSearchBar.js"
+            ],
+            "c/search": [
+                "search/search.js"
+            ],
+            "c/searchContactResult": [
+                "searchContactResult/searchContactResult.js"
+            ],
+            "c/wireWithApex": [
+                "wireWithApex/wireWithApex.js"
+            ],
+            "c/wireWithLds": [
+                "wireWithLds/wireWithLds.js"
+            ],
+            "c/wokingWithSalesforceData": [
+                "wokingWithSalesforceData/wokingWithSalesforceData.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

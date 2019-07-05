@@ -1,0 +1,11 @@
+<template>
+        <lightning-layout pull-to-boundary="medium">
+                <lightning-layout-item flexibility="auto" padding="horizontal-medium" style="width:50%;">
+                    <lightning-card title="Contacts List" icon-name="standard:groups" if:true={contacts.data}>			
+                        <template for:each={contacts.data} for:item="contact">
+                            <c-contact-list-item key={contact.Id} contact={contact} onselected={contactSelected}></c-contact-list-item>
+                        </template>
+                    </lightning-card>                   
+                </lightning-layout-item>
+        </lightning-layout>
+</template>

@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:tabset>
+        <lightning:tab label="Working With Salesforce data">   
+            <c:wokingWithSalesforceData></c:wokingWithSalesforceData>
+            <h2>Component: wokingWithSalesforceData</h2>       
+        </lightning:tab>
+        <lightning:tab label="LWC Components Interaction">   
+            <c:lwcComponentsInteraction></c:lwcComponentsInteraction>       
+            <h2>Component: LwcComponentsInteraction</h2>
+        </lightning:tab>       
+        <lightning:tab label="Aura LWC Interaction">     
+           <c:auraLwcInteractionParent></c:auraLwcInteractionParent>           
+        </lightning:tab>
+       
+    </lightning:tabset>
+
+</aura:component>	
